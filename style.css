@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body {
+ display: flex;
+ justify-content: center;
+}
+
+.container {
+ width: 400px;
+ max-height: 550px;
+ margin-top: 15px;
+ border-radius: 10px;
+ border: 2px solid #9953f1;
+}
+
+.box1 {
+ width: 100%;
+ height: 60px;
+ border-radius: 10px;
+ border: 1px solid blue;
+ background-color: #9953f1;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.box1 h2 {
+ font-size: 19px;
+ font-family: "Roboto", sans-serif;
+ font-weight: bold;
+ font-style: italic;
+ color: white;
+}
+
+h1 {
+ font-family: "Roboto", sans-serif;
+ font-weight: bold;
+ text-align: center;
+ margin-top: 10px;
+}
+
+.inputs {
+ display: flex;
+ flex-direction: column;
+ gap: 15px;
+}
+
+input {
+ width: 286px;
+ height: 40px;
+ border-radius: 10px;
+ border: 1px solid blue;
+ margin: 13px 12% 0;
+ padding-right: 35px;
+ padding-left: 7px;
+ outline: none;
+}
+
+.inputicon {
+ position: relative;
+}
+
+.inputicon img {
+ font-size: 21px;
+ position: absolute;
+ right: 75px;
+ top: 40%;
+}
+
+.searce,
+.seraceicon {
+ display: none;
+}
+
+.seraceicon {
+ cursor: pointer;
+}
+
+.button {
+ border: none;
+ border-radius: 20px;
+ background-color: #9953f1;
+ width: 200px;
+ height: 42px;
+ margin: 20px auto;
+ color: white;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.button:hover {
+ background-color: blue;
+}
+
+.sorticon {
+ margin-left: 75%;
+ margin-top: 20px;
+}
+
+.hiddencontainer {
+ margin: 30px auto;
+ width: 286px;
+ max-height: 200px;
+ border: 1px solid #9953f1;
+ display: flex;
+ border-radius: 10px;
+ flex-direction: column;
+ gap: 5px;
+ overflow: auto;
+ display: none;
+}
+
+.note {
+ padding: 12px;
+}
+
+.note ol li {
+ flex: 1;
+ word-break: break-word;
+ margin-top: 14px;
+ font-size: 19px;
+ margin-left: 20px;
+ position: relative;
+ padding-right: 35px;
+}
+
+.note ol li img {
+ position: absolute;
+ right: 0;
+ top: 50%;
+ transform: translateY(-50%);
+ cursor: pointer;
+}
