@@ -10,7 +10,6 @@ const searce = document.querySelector(".searce");
 const addicon = document.querySelector(".addicon");
 const seraceicon = document.querySelector(".seraceicon");
 const noteOl = document.querySelector(".note ol");
-let iconsrc = sorticon.src;
 let flag = true;
 let arry = [];
 
@@ -154,13 +153,13 @@ button.addEventListener("click", () => {
 });
 
 sorticon.addEventListener("click", () => {
- if (iconsrc.includes("icon1.svg")) {
-  sorticon.src = "http://127.0.0.1:5500/image/icon4.svg";
-  iconsrc = sorticon.src;
+ const isAscending = sorticon.src.includes("icon1.svg");
+
+ if (isAscending) {
+  sorticon.src = "./image/icon4.svg";
   arry.sort((a, b) => a.localeCompare(b));
  } else {
-  sorticon.src = "http://127.0.0.1:5500/image/icon1.svg";
-  iconsrc = sorticon.src;
+  sorticon.src = "./image/icon1.svg";
   arry.sort((a, b) => b.localeCompare(a));
  }
  flag = false;
